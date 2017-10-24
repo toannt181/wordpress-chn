@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb03405-b11b-46de-aec6-8729cc64b662" name="Default" comment="" />
+    <list default="true" id="cdb03405-b11b-46de-aec6-8729cc64b662" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,6 +13,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="template-home.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="archive.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/archive.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -25,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/page.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="841">
               <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
@@ -55,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/wordpress-popular-posts/includes/class-wordpress-popular-posts-template.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-378">
-              <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+              <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
               <folding>
                 <marker date="1508829343000" expanded="true" signature="589:651" ph="SELECT pagev... $" />
                 <marker date="1508829343000" expanded="true" signature="1297:1436" ph="SELECT SUM(p... $" />
@@ -68,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single_old.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
-              <caret line="27" column="10" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="27" selection-end-column="10" />
+              <caret line="27" column="10" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="27" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -78,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -189,7 +201,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/content-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/taxonomy-product-cat.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-contact.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/header.php" />
@@ -203,6 +214,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php" />
       </list>
     </option>
   </component>
@@ -218,9 +230,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" fullScreen="true">
@@ -249,6 +258,24 @@
             <path>
               <item name="wordpress-chn" type="b2602c69:ProjectViewProjectNode" />
               <item name="wordpress-chn" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wordpress-chn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress-chn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wordpress-chn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress-chn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wordpress-chn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress-chn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cnh_theme_standard" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -326,17 +353,17 @@
       <workItem from="1508563672719" duration="2475000" />
       <workItem from="1508579095522" duration="9492000" />
       <workItem from="1508670724772" duration="91000" />
-      <workItem from="1508678964869" duration="8997000" />
+      <workItem from="1508678964869" duration="9076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119767000" />
+    <option name="totallyTimeSpent" value="119846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22961374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22961374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -344,7 +371,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40024185" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40024185" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -532,14 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -650,7 +669,7 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -689,7 +708,7 @@
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/wordpress-popular-posts/includes/class-wordpress-popular-posts-template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-378">
-          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
           <folding>
             <marker date="1508829343000" expanded="true" signature="589:651" ph="SELECT pagev... $" />
             <marker date="1508829343000" expanded="true" signature="1297:1436" ph="SELECT SUM(p... $" />
@@ -700,7 +719,7 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single_old.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="27" selection-end-column="10" />
+          <caret line="27" column="10" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="27" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -708,7 +727,7 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -723,8 +742,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="841">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding />
         </state>
       </provider>
