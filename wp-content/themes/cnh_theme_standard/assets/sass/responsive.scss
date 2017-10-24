@@ -1,0 +1,194 @@
+@media screen and (min-width: 1900px) {
+
+}
+
+@media screen and (max-width: 1080px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  p, h3 {
+    font-size: 14px;
+  }
+
+  header {
+    nav {
+      .container {
+        padding: 16px;
+
+        .logo {
+          flex-grow: 1;
+        }
+
+        a.hamburger {
+          display: block;
+          font-size: 24px;
+          color: white;
+        }
+
+        .menu {
+          display: none;
+          width: 100%;
+          margin-top: 16px;
+          a, button {
+            display: block;
+            margin: 8px 16px;
+          }
+
+          .dropdown-menu {
+            background: $dark-grey;
+            padding: 0;
+            a.dropdown-item {
+              margin-left: 0;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+
+  ul.banner {
+
+    li.item {
+      height: 320px;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+
+      > div {
+        padding-top: 64px;
+        h1 {
+          font-size: 32px;
+          margin-left: 16px;
+          margin-right: 16px;
+        }
+
+        h2 {
+          font-size: 20px;
+          margin-bottom: 32px;
+          margin-left: 16px;
+          margin-right: 16px;
+        }
+      }
+    }
+
+    button.slick-arrow {
+      display: none !important;
+    }
+
+    ul.slick-dots {
+      bottom: 16px;
+    }
+
+  }
+
+
+  main {
+
+    #product {
+      h2 {
+        font-size: 24px;
+      }
+
+      .group-product {
+        .item {
+          flex: 0 0 100%;
+        }
+
+        &.row-3-item {
+          display: block;
+
+          .item {
+            margin-bottom: 32px;
+          }
+        }
+      }
+    }
+
+    #news {
+
+      overflow: hidden;
+      h2 {
+        font-size: 24px;
+      }
+
+      .group-item {
+        display: block;
+        .item {
+          padding: 16px;
+          margin: 0 16px;
+        }
+      }
+    }
+
+    #comment {
+      h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      .quote {
+        width: 64px;
+        height: 64px;
+      }
+
+      .name {
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+    .contact {
+      padding: 32px 0;
+      h3 {
+        margin-bottom: 16px;
+      }
+    }
+    .copy-right {
+      padding: 16px 0;
+    }
+  }
+
+  .m-mt16 {
+    margin-top: 16px;
+  }
+  .m-mt32 {
+    margin-top: 32px;
+  }
+
+  .m-my32 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .m-mb16 {
+    margin-bottom: 16px;
+  }
+
+  .m-mb32 {
+    margin-bottom: 32px;
+  }
+
+  .m-ml0 {
+    margin-left: 0;
+  }
+  .m-mr0 {
+    margin-right: 0;
+  }
+
+  .m-center {
+    text-align: center;
+    justify-content: center;
+  }
+
+}
