@@ -72,39 +72,23 @@
                 <div class="line"></div>
             </h2>
             <div class="group-item list-new">
-                <div class="item">
-                    <div class="img"><img src="<?php bloginfo( 'template_directory' ) ?>/assets/img/news-1.png" alt="">
+	            <?php
+	            $mp = chn_get_poplular_post( 5 );
+	            foreach ( $mp as $p ) : ?>
+                    <div class="item">
+                        <div class="img">
+                            <?php echo get_the_post_thumbnail($p->ID, 'medium') ?>
+                        </div>
+                        <h3><?php echo $p->post_title ?></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur dignissimos ea
+                            laboriosam minima neque perferendis voluptate. Eius libero, veniam.</p>
+                        <a class="button" href="<?php echo get_the_permalink($p->ID) ?>">Chi tiết</a>
                     </div>
-                    <h3>Chiến tranh điện tử công nghệ cao tại Syria</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur dignissimos ea
-                        laboriosam minima neque perferendis voluptate. Eius libero, veniam.</p>
-                    <a class="button" href="#">Chi tiết</a>
-                </div>
-                <div class="item">
-                    <div class="img"><img src="<?php bloginfo( 'template_directory' ) ?>/assets/img/news-1.png" alt="">
-                    </div>
-                    <h3>Chiến tranh điện tử công nghệ cao tại Syria</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur dignissimos ea
-                        laboriosam minima neque perferendis voluptate. Eius libero, veniam.</p>
-                    <a class="button" href="#">Chi tiết</a>
 
-                </div>
-                <div class="item">
-                    <div class="img"><img src="<?php bloginfo( 'template_directory' ) ?>/assets/img/news-1.png" alt="">
-                    </div>
-                    <h3>Chiến tranh điện tử công nghệ cao tại Syria</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur dignissimos ea
-                        laboriosam minima neque perferendis voluptate. Eius libero, veniam.</p>
-                    <a class="button" href="#">Chi tiết</a>
-                </div>
-                <div class="item">
-                    <div class="img"><img src="<?php bloginfo( 'template_directory' ) ?>/assets/img/news-1.png" alt="">
-                    </div>
-                    <h3>Chiến tranh điện tử công nghệ cao tại Syria</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur dignissimos ea
-                        laboriosam minima neque perferendis voluptate. Eius libero, veniam.</p>
-                    <a class="button" href="#">Chi tiết</a>
-                </div>
+		            <?php
+	            endforeach;
+	            ?>
+
             </div>
         </div>
     </div>

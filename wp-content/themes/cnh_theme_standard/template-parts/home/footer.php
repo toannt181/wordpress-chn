@@ -5,36 +5,37 @@
 ?>
 
 <footer>
-	<div class="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<h3>THÔNG TIN</h3>
-					<p><?php the_field('thong_tin', 'option'); ?></p>
-				</div>
-				<div class="col-md-3 m-mt16">
-					<h3>LIÊN HỆ</h3>
-					<p>Email: <?php the_field('email', 'option'); ?></p>
-					<p>Hotline: <?php the_field('hotline', 'option'); ?></p>
-				</div>
-				<div class="col-md-3 m-mt16">
-					<h3>ĐỊA CHỈ</h3>
-					<p><?php the_field('dia_chi', 'option'); ?></p>
-				</div>
-				<div class="col-md-3 m-mt16">
-					<h3>FANPAGE</h3>
-					<div class="fb-page" data-href="<?php the_field('fanpage', 'option'); ?>" data-small-header="false"
-					     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="copy-right">
-		<div class="container">
-			<div><?php the_field('copyright', 'option'); ?></div>
-		</div>
-	</div>
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>THÔNG TIN</h3>
+                    <p><?php the_field( 'thong_tin', 'option' ); ?></p>
+                </div>
+                <div class="col-md-3 m-mt16">
+                    <h3>LIÊN HỆ</h3>
+                    <p>Email: <?php the_field( 'email', 'option' ); ?></p>
+                    <p>Hotline: <?php the_field( 'hotline', 'option' ); ?></p>
+                </div>
+                <div class="col-md-3 m-mt16">
+                    <h3>ĐỊA CHỈ</h3>
+                    <p><?php the_field( 'dia_chi', 'option' ); ?></p>
+                </div>
+                <div class="col-md-3 m-mt16">
+                    <h3>FANPAGE</h3>
+                    <div class="fb-page" data-href="<?php the_field( 'fanpage', 'option' ); ?>"
+                         data-small-header="false"
+                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+            <div><?php the_field( 'copyright', 'option' ); ?></div>
+        </div>
+    </div>
 </footer>
 
 <!-- Optional JavaScript -->
@@ -61,9 +62,11 @@
         autoplaySpeed: 2000,
         arrows: false
     });
+
+    var numberListNew = $('.list-new').children().length < 3 ? $('.list-new').children().length : 3;
     $('.list-new').slick({
         infinite: true,
-        slidesToShow: $(window).width() > 768 ? 3 : 1,
+        slidesToShow: $(window).width() > 768 ? numberListNew : 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,

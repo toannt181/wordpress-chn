@@ -465,7 +465,8 @@ main #news {
       main #news .group-item .item .img {
         margin: 0 -16px; }
         main #news .group-item .item .img img {
-          width: 100%; }
+          width: 100%;
+          height: auto; }
       main #news .group-item .item h3 {
         text-transform: uppercase;
         color: #186a9c;
