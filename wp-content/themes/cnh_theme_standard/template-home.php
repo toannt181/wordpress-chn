@@ -34,7 +34,7 @@
 
     <div id="product">
         <div class="container">
-            <h2>Nhóm sản phẩm</h2>
+            <h2>Sản phẩm</h2>
             <div class="group-product">
 
 				<?php
