@@ -10,5 +10,14 @@
  */
 
 ?>
-<?php
-get_template_part( 'template-parts/home/header' );
+<?php get_template_part( 'template-parts/home/header' ); ?>
+<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+    <div class="container">
+		<?php if ( function_exists( 'bcn_display' ) ) {
+			bcn_display();
+		} ?>
+    </div>
+</div>
+
+
+<div class="container">

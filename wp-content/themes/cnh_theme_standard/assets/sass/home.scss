@@ -469,6 +469,12 @@ main {
 
 }
 
+.breadcrumbs {
+  background: white;
+  border-bottom: 1px solid $light-grey;
+  padding: 8px 0;
+}
+
 main#article {
   padding: 32px 0;
 
@@ -527,6 +533,7 @@ main#article {
         padding: 4px 8px;
         font-size: 12px;
         text-transform: uppercase;
+        margin-right: 4px;
       }
       .tag {
         background: $bg-top;

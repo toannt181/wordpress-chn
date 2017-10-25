@@ -572,6 +572,11 @@ main .map-web {
 main .map {
   margin-top: 64px; }
 
+.breadcrumbs {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 0; }
+
 main#article {
   padding: 32px 0; }
   main#article article {
@@ -602,7 +607,8 @@ main#article {
   main#article .left .list-tag span {
     padding: 4px 8px;
     font-size: 12px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-right: 4px; }
   main#article .left .list-tag .tag {
     background: #383b3d;
     color: white; }

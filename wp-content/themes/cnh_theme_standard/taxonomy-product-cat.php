@@ -7,21 +7,9 @@
  * @author toan.nt181
  */
 ?>
-<?php get_template_part( 'template-parts/home/header' ) ?>
+<?php get_header() ?>
 
 <main>
-    <div class="map-web">
-        <div class="container">
-            <nav aria-label="breadcrumb" role="navigation">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                    <li class="breadcrumb-item"><a href="#">Sản phẩm</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Sản phẩm hỗ trợ</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-
     <div id="product">
         <div class="container">
 
@@ -70,4 +58,4 @@
 
 </main>
 
-<?php get_template_part( 'template-parts/home/footer' ) ?>
+<?php get_footer() ?>

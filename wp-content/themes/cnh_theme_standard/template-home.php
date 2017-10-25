@@ -72,22 +72,21 @@
                 <div class="line"></div>
             </h2>
             <div class="group-item list-new">
-	            <?php
-	            $mp = chn_get_poplular_post( 5 );
-	            foreach ( $mp as $p ) : ?>
+				<?php
+				$mp = chn_get_poplular_post( 5 );
+				foreach ( $mp as $p ) : ?>
                     <div class="item">
                         <div class="img">
-                            <?php echo get_the_post_thumbnail($p->ID, 'medium') ?>
+							<?php echo get_the_post_thumbnail( $p->ID, 'medium' ) ?>
                         </div>
                         <h3><?php echo $p->post_title ?></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur dignissimos ea
-                            laboriosam minima neque perferendis voluptate. Eius libero, veniam.</p>
-                        <a class="button" href="<?php echo get_the_permalink($p->ID) ?>">Chi tiết</a>
+                        <p class="content ellipsis-3-line"><?php echo $p->post_content ?></p>
+                        <a class="button" href="<?php echo get_the_permalink( $p->ID ) ?>">Chi tiết</a>
                     </div>
 
-		            <?php
-	            endforeach;
-	            ?>
+					<?php
+				endforeach;
+				?>
 
             </div>
         </div>
@@ -104,24 +103,24 @@
                         src="<?php bloginfo( 'template_directory' ) ?>/assets/img/blockquote-1.png" alt=""></div>
 
             <ul class="m-0 p-0 list-comment">
-                <li class="item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate labore pariatur saepe
-                        tempore
-                        unde?
-                        Aperiam eos excepturi natus officia voluptatum!</p>
-                    <div class="name">
-                        Nguyen Van A
-                    </div>
-                </li>
-                <li class="item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate labore pariatur saepe
-                        tempore
-                        unde?
-                        Aperiam eos excepturi natus officia voluptatum!</p>
-                    <div class="name">
-                        Nguyen Van A
-                    </div>
-                </li>
+				<?php
+				if ( have_rows( 'nhan_xet_khach_hang' ) ):
+
+					// loop through the rows of data
+					while ( have_rows( 'nhan_xet_khach_hang' ) ) : the_row();
+
+						?>
+                        <li class="item">
+                            <p><?php the_sub_field( 'nhan_xet' ); ?></p>
+                            <div class="name"><?php the_sub_field( 'ten_khach_hang' ); ?></div>
+
+                        </li>
+						<?
+					endwhile;
+				endif;
+
+				?>
+
             </ul>
         </div>
     </div>
@@ -149,5 +148,37 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC41cdbDqeO8c9KcIc0FC-dt8kuA4yJuwE&callback=initMap">
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
 
+        $('ul.banner').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+        });
+        $('ul.list-comment').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false
+        });
+
+        var numberListNew = $('.list-new').children().length < 3 ? $('.list-new').children().length : 3;
+        $('.list-new').slick({
+            infinite: true,
+            slidesToShow: $(window).width() > 768 ? numberListNew : 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: $(window).width() > 768
+        });
+
+    });
+</script>
 <?php get_template_part( 'template-parts/home/footer' ) ?>

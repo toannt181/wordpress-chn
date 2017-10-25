@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb03405-b11b-46de-aec6-8729cc64b662" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/js/ellipsis.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/.sass-cache/edc17199f9ed0a897bc863a47c13ae0be0c7f0ab/home.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/.sass-cache/edc17199f9ed0a897bc863a47c13ae0be0c7f0ab/home.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/archive.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/archive.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/css/main.css" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/css/main.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/css/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass/home.scss" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass/home.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/sidebar.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/sidebar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/taxonomy-product-cat.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/taxonomy-product-cat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-contact.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-contact.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,65 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="template-home.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="template-home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="34" />
-              <folding>
-                <marker date="1508840783000" expanded="true" signature="2307:2495" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass/home.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="309" column="25" lean-forward="false" selection-start-line="309" selection-start-column="25" selection-end-line="309" selection-end-column="25" />
+            <state relative-caret-position="563">
+              <caret line="149" column="9" lean-forward="true" selection-start-line="149" selection-start-column="9" selection-end-line="182" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="82" column="57" lean-forward="true" selection-start-line="82" selection-start-column="57" selection-end-line="82" selection-end-column="57" />
-              <folding>
-                <marker date="1508840218000" expanded="true" signature="3279:3332" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="archive.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/archive.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/page.php">
+      <file leaf-file-name="content-product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/content-product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+              <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="23" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="taxonomy-product-cat.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/taxonomy-product-cat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,17 +63,79 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="204" column="21" lean-forward="true" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
+            <state relative-caret-position="365">
+              <caret line="211" column="83" lean-forward="false" selection-start-line="211" selection-start-column="71" selection-end-line="211" selection-end-column="83" />
               <folding>
-                <marker date="1508840208000" expanded="true" signature="5729:5881" ph="SELECT * FRO... wp_posts" />
-                <marker date="1508840208000" expanded="true" signature="5729:5900" ph="SELECT * FRO... wp_posts" />
-                <marker date="1508840208000" expanded="true" signature="5729:5933" ph="SELECT * FRO... wp_posts" />
-                <marker date="1508840208000" expanded="true" signature="5729:5934" ph="SELECT * FRO... wp_posts" />
-                <marker date="1508840208000" expanded="true" signature="5729:5937" ph="SELECT * FRO... wp_posts" />
-                <marker date="1508840208000" expanded="true" signature="5729:5948" ph="SELECT * FRO... wp_posts" />
-                <marker date="1508840208000" expanded="true" signature="5729:5949" ph="SELECT * FRO... wp_options" />
+                <marker date="1508922473000" expanded="true" signature="5729:5895" ph="SELECT * FRO... wp_posts" />
+                <marker date="1508922473000" expanded="true" signature="5729:5914" ph="SELECT * FRO... wp_posts" />
+                <marker date="1508922473000" expanded="true" signature="5729:5933" ph="SELECT ID, p... wp_posts" />
+                <marker date="1508922473000" expanded="true" signature="5729:5940" ph="SELECT ID, p... wp_posts" />
+                <marker date="1508922473000" expanded="true" signature="5729:5972" ph="SELECT * FRO... wp_posts" />
+                <marker date="1508922473000" expanded="true" signature="5729:5973" ph="SELECT * FRO... wp_posts" />
+                <marker date="1508922473000" expanded="true" signature="5729:5976" ph="SELECT * FRO... wp_posts" />
+                <marker date="1508922473000" expanded="true" signature="5729:5987" ph="SELECT * FRO... wp_posts" />
+                <marker date="1508922473000" expanded="true" signature="5729:5988" ph="SELECT * FRO... wp_options" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-contact.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass/home.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="474" column="16" lean-forward="false" selection-start-line="474" selection-start-column="16" selection-end-line="474" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,6 +180,8 @@
       <find>item</find>
       <find>itemgir</find>
       <find>group-item</find>
+      <find>tag</find>
+      <find>bread</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -153,7 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/porfoliotheme/assets/css/partial/color.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/porfoliotheme/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/porfoliotheme/assets/js/colorWave.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/porfoliotheme/.babelrc" />
@@ -188,22 +229,23 @@
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass/responsive.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/content-product.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/taxonomy-product-cat.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-contact.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/content.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/inc/template-tags.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/archive.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/page.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/index.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/sidebar.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/archive.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-contact.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass/home.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/taxonomy-product-cat.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass/home.scss" />
       </list>
     </option>
   </component>
@@ -281,6 +323,15 @@
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="cnh_theme_standard" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wordpress-chn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress-chn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cnh_theme_standard" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -319,11 +370,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/js" />
       <recent name="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard" />
       <recent name="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts" />
       <recent name="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home" />
       <recent name="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/porfoliotheme/portfolio_assets/js" />
@@ -376,12 +427,12 @@
       <workItem from="1508563672719" duration="2475000" />
       <workItem from="1508579095522" duration="9492000" />
       <workItem from="1508670724772" duration="91000" />
-      <workItem from="1508678964869" duration="11199000" />
+      <workItem from="1508678964869" duration="16373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121969000" />
+    <option name="totallyTimeSpent" value="127143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -423,7 +474,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/porfoliotheme/style.css" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/porfoliotheme/portfolio_assets/css/main.css" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/porfoliotheme/portfolio_assets/js/sketch.js" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/porfoliotheme/portfolio_assets/js/jquery.app.js" />
@@ -514,16 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/content-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding>
-            <marker date="1508661420000" expanded="true" signature="313:333" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/content-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-172">
@@ -544,22 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2046">
-          <caret line="95" column="64" lean-forward="false" selection-start-line="95" selection-start-column="64" selection-end-line="95" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -588,26 +612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/article_test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/taxonomy-product-cat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -636,42 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/header_old.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="13" column="50" lean-forward="false" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -744,6 +720,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -752,62 +752,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/archive.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        <state relative-caret-position="550">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="204" column="21" lean-forward="true" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
-          <folding>
-            <marker date="1508840208000" expanded="true" signature="5729:5881" ph="SELECT * FRO... wp_posts" />
-            <marker date="1508840208000" expanded="true" signature="5729:5900" ph="SELECT * FRO... wp_posts" />
-            <marker date="1508840208000" expanded="true" signature="5729:5933" ph="SELECT * FRO... wp_posts" />
-            <marker date="1508840208000" expanded="true" signature="5729:5934" ph="SELECT * FRO... wp_posts" />
-            <marker date="1508840208000" expanded="true" signature="5729:5937" ph="SELECT * FRO... wp_posts" />
-            <marker date="1508840208000" expanded="true" signature="5729:5948" ph="SELECT * FRO... wp_posts" />
-            <marker date="1508840208000" expanded="true" signature="5729:5949" ph="SELECT * FRO... wp_options" />
-          </folding>
+        <state relative-caret-position="629">
+          <caret line="104" column="6" lean-forward="false" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/footer.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/js/jquery.dotdotdot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="82" column="57" lean-forward="true" selection-start-line="82" selection-start-column="57" selection-end-line="82" selection-end-column="57" />
-          <folding>
-            <marker date="1508840218000" expanded="true" signature="3279:3332" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="34" />
-          <folding>
-            <marker date="1508840783000" expanded="true" signature="2307:2495" ph="..." />
-          </folding>
+        <state relative-caret-position="147">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/assets/sass/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="309" column="25" lean-forward="false" selection-start-line="309" selection-start-column="25" selection-end-line="309" selection-end-column="25" />
+        <state relative-caret-position="467">
+          <caret line="474" column="16" lean-forward="false" selection-start-line="474" selection-start-column="16" selection-end-line="474" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="211" column="83" lean-forward="false" selection-start-line="211" selection-start-column="71" selection-end-line="211" selection-end-column="83" />
+          <folding>
+            <marker date="1508922473000" expanded="true" signature="5729:5895" ph="SELECT * FRO... wp_posts" />
+            <marker date="1508922473000" expanded="true" signature="5729:5914" ph="SELECT * FRO... wp_posts" />
+            <marker date="1508922473000" expanded="true" signature="5729:5933" ph="SELECT ID, p... wp_posts" />
+            <marker date="1508922473000" expanded="true" signature="5729:5940" ph="SELECT ID, p... wp_posts" />
+            <marker date="1508922473000" expanded="true" signature="5729:5972" ph="SELECT * FRO... wp_posts" />
+            <marker date="1508922473000" expanded="true" signature="5729:5973" ph="SELECT * FRO... wp_posts" />
+            <marker date="1508922473000" expanded="true" signature="5729:5976" ph="SELECT * FRO... wp_posts" />
+            <marker date="1508922473000" expanded="true" signature="5729:5987" ph="SELECT * FRO... wp_posts" />
+            <marker date="1508922473000" expanded="true" signature="5729:5988" ph="SELECT * FRO... wp_options" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/content-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/taxonomy-product-cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-parts/home/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/cnh_theme_standard/template-home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="149" column="9" lean-forward="true" selection-start-line="149" selection-start-column="9" selection-end-line="182" selection-end-column="9" />
           <folding />
         </state>
       </provider>

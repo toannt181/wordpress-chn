@@ -10,5 +10,5 @@
  */
 
 ?>
-<?php
-get_template_part( 'template-parts/home/footer' );
+</div>
+<?php get_template_part( 'template-parts/home/footer' ); ?>

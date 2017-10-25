@@ -44,34 +44,9 @@
 <script src="<?php bloginfo( 'template_directory' ) ?>/assets/js/popper.min.js"></script>
 <script src="<?php bloginfo( 'template_directory' ) ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo( 'template_directory' ) ?>/assets/js/slick.min.js"></script>
+<script src="<?php bloginfo( 'template_directory' ) ?>/assets/js/ellipsis.min.js"></script>
 <script>
-    $('ul.banner').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: true,
-    });
-    $('ul.list-comment').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false
-    });
 
-    var numberListNew = $('.list-new').children().length < 3 ? $('.list-new').children().length : 3;
-    $('.list-new').slick({
-        infinite: true,
-        slidesToShow: $(window).width() > 768 ? numberListNew : 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: $(window).width() > 768
-    });
 
     var menu = $('header nav');
     var menuScrollTop = menu.offset().top;
@@ -89,6 +64,11 @@
         e.preventDefault();
         $('header nav .menu').slideToggle();
     });
+
+    Ellipsis({
+        class: '.ellipsis-3-line',
+        lines: 3
+    }); //specific conf on titles
 
 </script>
 

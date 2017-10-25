@@ -209,9 +209,10 @@ function chn_get_poplular_post( $limit ) {
 	$day_before = date( 'Y-m-d', strtotime( $date . ' -7 day' ) );
 
 	$results = $wpdb->get_results(
-		'SELECT ID, post_author, post_title, comment_count, post_date FROM wp_posts AS a
+		'SELECT ID, post_author, post_title, comment_count, post_date, post_content FROM wp_posts AS a
 INNER JOIN wp_popularpostsdata AS b ON a.id=b.postid
 AND a.post_date > "' . $day_before . '"
+AND a.post_type = "post"
 ORDER BY b.pageviews DESC
 LIMIT ' . $limit . ';',
 		OBJECT );

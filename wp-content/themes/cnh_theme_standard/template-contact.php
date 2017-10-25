@@ -34,23 +34,24 @@
                     <h2>Thông tin</h2>
                     <div class="item">
                         <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
-                        <div><?php the_field('thong_tin', 'option'); ?></div>
+                        <div><?php the_field( 'thong_tin', 'option' ); ?></div>
                     </div>
                     <div class="item">
                         <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                        <div><?php the_field('hotline', 'option'); ?></div>
+                        <div><?php the_field( 'hotline', 'option' ); ?></div>
                     </div>
                     <div class="item">
                         <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                        <div>toan@<?php the_field('email', 'option'); ?>.com</div>
+                        <div><?php the_field( 'email', 'option' ); ?></div>
                     </div>
                     <div class="item">
                         <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
-                        <div><?php the_field('ten_lien_lac', 'option'); ?></div>
+                        <div><?php the_field( 'ten_lien_lac', 'option' ); ?></div>
                     </div>
                 </div>
                 <div class="col-md-8 right m-mt32">
                     <h2>Liên hệ</h2>
+
                     <div class="row">
                         <div class="col-md-4">
                             <div><p>Tên*</p></div>
@@ -67,9 +68,12 @@
                         <div class="col-md-12 mt16">
                             <div><p>Nội dung*</p></div>
                             <div><textarea class="form-control" type="text" rows="5"></textarea></div>
+
+                            <button class="button">Gửi liên hệ</button>
+
                         </div>
+
                     </div>
-                    <button class="button">Gửi liên hệ</button>
                 </div>
             </div>
         </div>
@@ -81,7 +85,7 @@
 
 <script>
     function initMap() {
-        var uluru = {lat: 21.0364292, lng: 105.7896789};
+        var uluru = {lat: 21.0503399, lng: 105.7773811};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
             center: uluru
