@@ -14,7 +14,7 @@
         <div class="container">
 
 
-            <h2>
+            <h2 class="mb32">
                 <div class="line"></div>
                 <div><?php the_archive_title() ?></div>
                 <div class="line"></div>
@@ -22,7 +22,7 @@
 
 			<?php
 			if ( have_posts() ) : ?>
-                <div class="group-product row-3-item">
+                <div class="cat-product group-product">
 					<?php
 					/* Start the Loop */
 					while ( have_posts() ) : the_post();
@@ -40,14 +40,17 @@
                 </div>
                 <div class="text-center my16">
 					<?php if (get_previous_posts_link()) : ?>
-                        <a href="<?php echo get_previous_posts_page_link() ?>"><img
-                                    src="<?php bloginfo( 'template_directory' ) ?>/assets/img/previous.png" width="100"
-                                    alt=""></a>
+                        <a href="<?php echo get_previous_posts_page_link() ?>">
+<!--                            <img-->
+<!--                                    src="--><?php //bloginfo( 'template_directory' ) ?><!--/assets/img/previous.png" width="100"-->
+<!--                                    alt="">-->
+                            <i class="fa fa-chevron-left icon-size-24 mr16" aria-hidden="true"></i>
+                        </a>
 					<?php endif; ?>
 					<?php if (get_next_posts_link()) : ?>
-                        <a href="<?php echo get_next_posts_page_link() ?>"><img
-                                    src="<?php bloginfo( 'template_directory' ) ?>/assets/img/next.png" width="100"
-                                    alt=""></a>
+                        <a href="<?php echo get_next_posts_page_link() ?>">
+                            <i class="fa fa-chevron-right icon-size-24 ml16" aria-hidden="true"></i>
+                        </a>
 					<?php endif; ?>
                 </div>
 				<?php

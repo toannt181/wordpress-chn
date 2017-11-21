@@ -224,6 +224,10 @@ main {
 
         .img {
           padding: 16px;
+          height: 256px;
+          display: flex;
+          align-items: center;
+          overflow: hidden;
           img {
             width: 100%;
             border-radius: 100%;
@@ -237,6 +241,7 @@ main {
           padding: 16px 0;
           font-size: 20px;
           border-bottom: 2px solid $dark-grey;
+          height: 80px;
 
           a {
             color: $primary;
@@ -259,14 +264,22 @@ main {
         }
       }
 
-      &.row-3-item .item {
+    }
+
+    .cat-product {
+      .item {
+        margin-bottom: 32px;
         flex: 0 0 33.33%;
         .img {
-          padding-left: 32px;
-          padding-right: 32px;
+          padding: 16px 32px;
+          margin-bottom: 16px;
           img {
             border-radius: 0;
           }
+        }
+        .content {
+          margin: 16px 0;
+          flex-grow: 1;
         }
       }
     }
@@ -305,6 +318,8 @@ main {
 
         .img {
           margin: 0 -16px;
+          height: 128px;
+          overflow: hidden;
           img {
             width: 100%;
             height: auto;
@@ -322,6 +337,11 @@ main {
         p {
           margin: 16px 0;
           font-size: 14px;
+        }
+
+        p.content {
+          height: 5em;
+          overflow: hidden;
         }
 
         a.button {
@@ -479,10 +499,16 @@ main#article {
   padding: 32px 0;
 
   article {
-    margin-bottom: 32px;
+    margin-bottom: 80px;
+
+    .img {
+      margin-top: 16px;
+    }
+
+    p.time {
+      margin-bottom: 16px;
+    }
   }
-
-
 
   .left {
     h2 {

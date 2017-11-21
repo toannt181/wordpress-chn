@@ -184,7 +184,7 @@ add_filter( 'get_the_archive_title', function ( $title ) {
  */
 add_action( 'pre_get_posts', function ( $query ) {
 	if ( is_tax( 'product-cat' ) ) {
-		$query->set( 'posts_per_page', 2 );
+		$query->set( 'posts_per_page', 9 );
 
 		return;
 	}
@@ -212,6 +212,23 @@ function chn_get_poplular_post( $limit ) {
 		'SELECT ID, post_author, post_title, comment_count, post_date, post_content FROM wp_posts AS a
 INNER JOIN wp_popularpostsdata AS b ON a.id=b.postid
 AND a.post_date > "' . $day_before . '"
+AND a.post_type = "post"
+ORDER BY b.pageviews DESC
+LIMIT ' . $limit . ';',
+		OBJECT );
+
+
+	return $results;
+}
+
+function chn_get_poplular_post_unlimited_day_before( $limit ) {
+	global $wpdb;
+
+	$date       = date( 'c' );
+
+	$results = $wpdb->get_results(
+		'SELECT ID, post_author, post_title, comment_count, post_date, post_content FROM wp_posts AS a
+INNER JOIN wp_popularpostsdata AS b ON a.id=b.postid
 AND a.post_type = "post"
 ORDER BY b.pageviews DESC
 LIMIT ' . $limit . ';',

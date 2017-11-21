@@ -48,10 +48,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 d-flex align-items-center text-uppercase m-center">
-                    <?php bloginfo('name') ?>
+					<?php bloginfo( 'name' ) ?>
                 </div>
                 <div class="col-md-3 d-flex align-items-center m-mt16">
-                    <input class="form-control" type="text" placeholder="Tìm kiếm">
+                    <form method="GET" action="/" class="w-100">
+                        <input class="form-control" type="text" placeholder="Tìm kiếm" name="s">
+                    </form>
                     <img src="" alt="">
                 </div>
                 <div class="col-md-2 d-flex align-items-center m-mt16 m-center">

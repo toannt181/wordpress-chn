@@ -23,7 +23,13 @@
 
 	if ( has_post_thumbnail() ) : ?>
         <div class="img">
-            <a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark"><?php the_post_thumbnail( 'medium' ) ?></a>
+			<?php if ( !is_singular() ) : ?>
+                <a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
+					<?php the_post_thumbnail( 'medium' ) ?>
+                </a>
+			<?php else : ?>
+				<?php the_post_thumbnail( 'medium' ) ?>
+			<?php endif; ?>
         </div>
 		<?php
 	endif;

@@ -90,7 +90,6 @@
 
   }
 
-
   main {
 
     #product {
@@ -101,6 +100,16 @@
       .group-product {
         .item {
           flex: 0 0 100%;
+          margin-bottom: 32px;
+
+          .img {
+            height: auto;
+            padding: 16px 32px;
+          }
+        }
+
+        h3 {
+          height: auto;
         }
 
         &.row-3-item {

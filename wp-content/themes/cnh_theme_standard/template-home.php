@@ -73,14 +73,16 @@
             </h2>
             <div class="group-item list-new">
 				<?php
-				$mp = chn_get_poplular_post( 5 );
+				$mp = chn_get_poplular_post_unlimited_day_before( 5 );
 				foreach ( $mp as $p ) : ?>
                     <div class="item">
                         <div class="img">
 							<?php echo get_the_post_thumbnail( $p->ID, 'medium' ) ?>
                         </div>
                         <h3><?php echo $p->post_title ?></h3>
-                        <p class="content ellipsis-3-line"><?php echo $p->post_content ?></p>
+                        <p class="content">
+							<?php echo wp_trim_words( $p->post_content, 15 ) ?>
+                        </p>
                         <a class="button" href="<?php echo get_the_permalink( $p->ID ) ?>">Chi tiết</a>
                     </div>
 

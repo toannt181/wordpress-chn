@@ -12,13 +12,20 @@
 
 <div class="item" id="product-<?php the_ID(); ?>">
     <div class="img">
-        <img src="<?php the_post_thumbnail_url( 'medium' ) ?>" alt="">
+        <a href="<?php echo esc_url( get_permalink() ) ?>">
+            <img src="<?php the_post_thumbnail_url( 'medium' ) ?>" alt="">
+        </a>
     </div>
     <h3>
-		<?php the_title() ?>
+        <a href="<?php echo esc_url( get_permalink() ) ?>">
+			<?php the_title() ?>
+        </a>
     </h3>
 
-	<?php the_content(); ?>
+
+    <div class="content">
+		<?php echo wp_trim_words( get_the_content(), 30 ); ?>
+    </div>
     <a class="button" href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">Xem thêm</a>
 
 </div><!-- #post-<?php the_ID(); ?> -->
