@@ -12,19 +12,21 @@
 
 <ul class="banner">
     <li class="item">
-        <img src="<?php bloginfo( 'template_directory' ) ?>/assets/img/banner-1.jpg" alt="">
+	    <?php $image = get_field('banner_image_1'); ?>
+        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
         <div>
             <h1>Thiết bị nghiệp vụ</h1>
             <h2>Trong lĩnh vực an ninh quốc phòng</h2>
-            <a href="#">Xem thêm</a>
+            <a href="/?product-cat=thiet-bi-nghiep-vu">Xem thêm</a>
         </div>
     </li>
     <li class="item">
-        <img src="<?php bloginfo( 'template_directory' ) ?>/assets/img/banner-1.jpg" alt="">
+	    <?php $image = get_field('banner_image_2'); ?>
+        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
         <div>
             <h1>Thiết bị nghiệp vụ</h1>
             <h2>Trong lĩnh vực an ninh quốc phòng</h2>
-            <a href="#">Xem thêm</a>
+            <a href="/?product-cat=thiet-bi-nghiep-vu">Xem thêm</a>
         </div>
     </li>
 

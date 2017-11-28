@@ -37,6 +37,21 @@ define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/**
+ * Set the following constants in wp-config.php
+ * These should be added somewhere BEFORE the
+ * constant ABSPATH is defined.
+ */
+define( 'SMTP_USER',   '' );    // Username to use for SMTP authentication
+define( 'SMTP_PASS',   '' );       // Password to use for SMTP authentication
+define( 'SMTP_HOST',   'mail.cnhvietnam.com' );    // The hostname of the mail server
+define( 'SMTP_FROM',   'website@example.com' ); // SMTP From email address
+define( 'SMTP_NAME',   'e.g Website Name' );    // SMTP From name
+define( 'SMTP_PORT',   '25' );                  // SMTP port number - likely to be 25, 465 or 587
+define( 'SMTP_SECURE', 'tls' );                 // Encryption system to use - ssl or tls
+define( 'SMTP_AUTH',    true );                 // Use SMTP authentication (true|false)
+define( 'SMTP_DEBUG',   0 );                    // for debugging purposes only set to 1 or 2
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

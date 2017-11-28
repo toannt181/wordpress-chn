@@ -8,7 +8,27 @@
  */
 ?>
 <?php get_template_part( 'template-parts/home/header' ) ?>
+<?php
+//user posted variables
+$name         = $_POST['message_name'];
+$email        = $_POST['message_email'];
+$phone_number = $_POST['message_phone'];
+$message      = $_POST['message_text'];
 
+if ( isset( $name ) ) {
+//php mailer variables
+	$to      = get_option( 'admin_email' );
+	$subject = "" . $name;
+	$headers = 'From: ' . $email . "\r\n" .
+	           'Reply-To: ' . $email . "\r\n";
+
+//Here put your Validation and send mail
+	$sent = wp_mail( $to, $subject, strip_tags( "Tên: " . $name . "\nSố điện thoại: " . $phone_number . "\nEmail: " . $email . "\nNội dung: " . $message, $headers ) );
+
+}
+
+
+?>
 <main>
     <div class="map-web">
         <div class="container">
@@ -20,6 +40,18 @@
             </nav>
         </div>
     </div>
+
+	<?php if ( isset( $name ) ) : unset( $name ); ?>
+        <div class="container">
+			<?php if ( $sent ) {
+				echo '<h2>Tin nhắn đã được gửi!</h2>';
+			}//message sent!
+			else {
+				echo '<h2>Tin nhắn gửi đi không thành công!</h2>';
+			}//message wasn't sent
+			?>
+        </div>
+	<?php endif; ?>
 
     <div class="map">
         <div class="container">
@@ -51,32 +83,33 @@
                 </div>
                 <div class="col-md-8 right m-mt32">
                     <h2>Liên hệ</h2>
+                    <form method="POST" action="">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div><p>Tên*</p></div>
+                                <div><input class="form-control" type="text" required name="message_name"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div><p>Email*</p></div>
+                                <div><input class="form-control" type="email" required name="message_email"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div><p>Số điện thoại*</p></div>
+                                <div><input class="form-control" type="text" required name="message_phone"></div>
+                            </div>
+                            <div class="col-md-12 mt16">
+                                <div><p>Nội dung*</p></div>
+                                <div><textarea class="form-control" type="text" rows="5" required
+                                               name="message_text"></textarea></div>
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div><p>Tên*</p></div>
-                            <div><input class="form-control" type="text"></div>
-                        </div>
-                        <div class="col-md-4">
-                            <div><p>Email*</p></div>
-                            <div><input class="form-control" type="text"></div>
-                        </div>
-                        <div class="col-md-4">
-                            <div><p>Số điện thoại*</p></div>
-                            <div><input class="form-control" type="text"></div>
-                        </div>
-                        <div class="col-md-12 mt16">
-                            <div><p>Nội dung*</p></div>
-                            <div><textarea class="form-control" type="text" rows="5"></textarea></div>
+                                <button class="button">Gửi liên hệ</button>
 
-                            <button class="button">Gửi liên hệ</button>
-
-                        </div>
-
-                    </div>
+                            </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 

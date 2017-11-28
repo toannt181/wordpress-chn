@@ -469,6 +469,16 @@ main {
     }
   }
 
+  #search-result {
+    padding: 16px 0;
+    h1 {
+      margin-bottom: 32px;
+    }
+    article {
+      margin-bottom: 32px;
+    }
+  }
+
   .agency {
     width: 100%;
 
@@ -626,6 +636,24 @@ main#article {
       color: white;
       background: $bg-top;
       padding: 4px 8px;
+    }
+  }
+
+  #single-product {
+    h2 {
+      text-align: center;
+    }
+
+    article {
+      .img {
+        max-width: 400px;
+        margin: 16px auto;
+      }
+
+      .content {
+        margin-top: 16px;
+      }
+
     }
   }
 }

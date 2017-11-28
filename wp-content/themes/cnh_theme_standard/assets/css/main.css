@@ -575,6 +575,12 @@ main #contact .right button {
   padding: 8px 24px;
   margin-top: 16px;
   font-size: 16px; }
+main #search-result {
+  padding: 16px 0; }
+  main #search-result h1 {
+    margin-bottom: 32px; }
+  main #search-result article {
+    margin-bottom: 32px; }
 main .agency {
   width: 100%; }
 main .map-web {
@@ -670,6 +676,13 @@ main#article {
       color: white;
       background: #383b3d;
       padding: 4px 8px; }
+  main#article #single-product h2 {
+    text-align: center; }
+  main#article #single-product article .img {
+    max-width: 400px;
+    margin: 16px auto; }
+  main#article #single-product article .content {
+    margin-top: 16px; }
 
 footer {
   color: #ddd; }
@@ -737,7 +750,8 @@ footer {
     font-size: 24px; }
   main #product .group-product .item {
     flex: 0 0 100%;
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    padding: 0; }
     main #product .group-product .item .img {
       height: auto;
       padding: 16px 32px; }
