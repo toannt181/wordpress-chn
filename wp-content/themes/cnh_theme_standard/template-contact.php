@@ -115,12 +115,13 @@ if ( isset( $name ) ) {
 
 </main>
 
-
 <script>
     function initMap() {
-        var uluru = {lat: 21.0503399, lng: 105.7773811};
+        var uluru = {
+            lat: <?php the_field( 'latitude', 'option' ); ?>,
+            lng: <?php the_field( 'longitude', 'option' ); ?>};
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
+            zoom: <?php the_field( 'zoom', 'option' ); ?>,
             center: uluru
         });
         var marker = new google.maps.Marker({
@@ -129,6 +130,7 @@ if ( isset( $name ) ) {
         });
     }
 </script>
+
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC41cdbDqeO8c9KcIc0FC-dt8kuA4yJuwE&callback=initMap">
 </script>

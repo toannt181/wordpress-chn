@@ -85,6 +85,8 @@
 						$terms = get_terms( array(
 							'taxonomy'   => 'product-cat',
 							'hide_empty' => false,
+							'orderby'    => 'count',
+							'order' => 'DES',
 						) );
 
 						foreach ( $terms as $term ) : ?>

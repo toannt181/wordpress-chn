@@ -11,24 +11,23 @@
 
 
 <ul class="banner">
-    <li class="item">
-	    <?php $image = get_field('banner_image_1'); ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-        <div>
-            <h1>Thiết bị nghiệp vụ</h1>
-            <h2>Trong lĩnh vực an ninh quốc phòng</h2>
-            <a href="/?product-cat=thiet-bi-nghiep-vu">Xem thêm</a>
-        </div>
-    </li>
-    <li class="item">
-	    <?php $image = get_field('banner_image_2'); ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-        <div>
-            <h1>Thiết bị nghiệp vụ</h1>
-            <h2>Trong lĩnh vực an ninh quốc phòng</h2>
-            <a href="/?product-cat=thiet-bi-nghiep-vu">Xem thêm</a>
-        </div>
-    </li>
+	<?php if ( have_rows( 'top_banner' ) ):
+
+		while ( have_rows( 'top_banner' ) ) : the_row(); ?>
+
+            <li class="item">
+				<?php $image = get_sub_field( 'banner_image' ); ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+                <div>
+                    <h1><?php the_sub_field('big_title') ?></h1>
+                    <h2><?php the_sub_field('description') ?></h2>
+                    <a href="<?php the_sub_field('link') ?>">Xem thêm</a>
+                </div>
+            </li>
+		<?php endwhile;
+
+	endif; ?>
+
 
 </ul>
 
@@ -45,13 +44,11 @@
 				$terms = get_terms( array(
 					'taxonomy'   => 'product-cat',
 					'hide_empty' => false,
+					'orderby'    => 'count',
+					'order'      => 'DES',
 				) );
 
 				foreach ( $terms as $term ) : ?>
-					<?php if ( $term->slug === 'khac' ) {
-						continue;
-					} ?>
-
                     <div class="item">
                         <div class="img">
 							<?php echo get_the_category_thumbnail( $term->term_id ) ?>
@@ -138,9 +135,9 @@
 <div id="map"></div>
 <script>
     function initMap() {
-        var uluru = {lat: 21.0364292, lng: 105.7896789};
+        var uluru = {lat: <?php the_field( 'latitude', 'option' ); ?>, lng: <?php the_field( 'longitude', 'option' ); ?>};
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
+            zoom: <?php the_field( 'zoom', 'option' ); ?>,
             center: uluru
         });
         var marker = new google.maps.Marker({
