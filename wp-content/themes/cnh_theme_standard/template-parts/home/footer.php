@@ -21,13 +21,15 @@
                     <h3>ĐỊA CHỈ</h3>
                     <p><?php the_field( 'dia_chi', 'option' ); ?></p>
                 </div>
-                <div class="col-md-3 m-mt16">
-                    <h3>FANPAGE</h3>
-                    <div class="fb-page" data-href="<?php the_field( 'fanpage', 'option' ); ?>"
-                         data-small-header="false"
-                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+				<?php if ( get_field( 'fanpage', 'option' ) ): ?>
+                    <div class="col-md-3 m-mt16">
+                        <h3>FANPAGE</h3>
+                        <div class="fb-page" data-href="<?php the_field( 'fanpage', 'option' ); ?>"
+                             data-small-header="false"
+                             data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        </div>
                     </div>
-                </div>
+				<?php endif; ?>
             </div>
         </div>
     </div>
