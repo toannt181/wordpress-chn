@@ -20,13 +20,13 @@ if ( ! function_exists( 'cnh_theme_standard_posted_on_lio' ) ) :
 
 		$posted_on = sprintf(
 		/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'cnh_theme_standard' ),
+			esc_html_x( 'Đăng ngày %s', 'post date', 'cnh_theme_standard' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
 		$byline = sprintf(
 		/* translators: %s: post author. */
-			esc_html_x( ' by %s', 'post author', 'cnh_theme_standard' ),
+			esc_html_x( ' bởi %s', 'post author', 'cnh_theme_standard' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 

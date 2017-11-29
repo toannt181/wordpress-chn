@@ -293,8 +293,7 @@ header nav {
   header nav .container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 16px; }
+    align-items: center; }
     header nav .container .logo {
       flex-grow: 1; }
       header nav .container .logo img {
@@ -324,18 +323,18 @@ header nav {
 ul.banner {
   margin: 0 !important;
   padding: 0; }
-  ul.banner h1, ul.banner h2 {
-    text-align: center; }
   ul.banner li.item {
     position: relative;
-    height: 480px;
     text-align: center;
     color: white; }
     ul.banner li.item img {
-      height: 100%;
       width: 100%;
       overflow: hidden; }
-    ul.banner li.item a {
+    ul.banner li.item a.button {
+      position: absolute;
+      left: 50%;
+      bottom: 80px;
+      transform: translateX(-50%);
       display: inline-block;
       padding: 8px 24px;
       color: white;
@@ -343,24 +342,9 @@ ul.banner {
       border: 3px solid white;
       text-transform: uppercase;
       transition: 0.4s; }
-      ul.banner li.item a:hover, ul.banner li.item a:active {
+      ul.banner li.item a.button:hover, ul.banner li.item a.button:active {
         background: #333;
         color: white; }
-    ul.banner li.item > div {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      padding-top: 128px; }
-      ul.banner li.item > div h1 {
-        text-transform: uppercase;
-        font-size: 60px;
-        margin-bottom: 16px; }
-      ul.banner li.item > div h2 {
-        text-transform: uppercase;
-        font-size: 32px;
-        margin-bottom: 64px;
-        font-weight: normal; }
   ul.banner button.slick-arrow {
     z-index: 1; }
     ul.banner button.slick-arrow:before {
@@ -407,6 +391,7 @@ main #product {
         height: 256px;
         display: flex;
         align-items: center;
+        justify-content: center;
         overflow: hidden; }
         main #product .group-product .item .img img {
           width: 100%;
@@ -483,7 +468,8 @@ main #news {
         color: #186a9c;
         text-align: center;
         padding: 16px 0;
-        border-bottom: 3px solid #888; }
+        border-bottom: 3px solid #888;
+        height: 70px; }
       main #news .group-item .item p {
         margin: 16px 0;
         font-size: 14px; }
@@ -581,6 +567,17 @@ main #search-result {
     margin-bottom: 32px; }
   main #search-result article {
     margin-bottom: 32px; }
+main #list-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0; }
+  main #list-logo .logo {
+    width: 150px;
+    margin: 0 16px; }
+    main #list-logo .logo img {
+      width: 100%; }
 main .agency {
   width: 100%; }
 main .map-web {
@@ -600,7 +597,7 @@ main .map {
 main#article {
   padding: 32px 0; }
   main#article article {
-    margin-bottom: 80px; }
+    margin-bottom: 16px; }
     main#article article .img {
       margin-top: 16px; }
     main#article article p.time {
@@ -617,6 +614,16 @@ main#article {
     width: 100%;
     height: auto;
     margin-bottom: 16px; }
+  main#article .left .new-box {
+    display: flex;
+    align-items: center; }
+    main#article .left .new-box .img {
+      flex: 0 0 250px;
+      margin-bottom: 0; }
+      main#article .left .new-box .img img {
+        width: 100%; }
+    main#article .left .new-box .combo-box {
+      margin-left: 16px; }
   main#article .left .news-related {
     margin: 32px 0; }
     main#article .left .news-related .group-news .item {
@@ -697,6 +704,9 @@ footer {
     background: #1b1b1b;
     padding: 24px 0; }
 
+@media screen and (min-width: 1900px) {
+  body {
+    font-size: 18px; } }
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px; }
@@ -704,8 +714,8 @@ footer {
   p, h3 {
     font-size: 14px; }
 
-  header nav .container {
-    padding: 16px; }
+  header {
+    font-size: 14px; }
     header nav .container .logo {
       flex-grow: 1; }
     header nav .container a.hamburger {
@@ -715,36 +725,25 @@ footer {
     header nav .container .menu {
       display: none;
       width: 100%;
-      margin-top: 16px; }
+      margin-bottom: 16px; }
       header nav .container .menu a, header nav .container .menu button {
         display: block;
         margin: 8px 16px; }
       header nav .container .menu .dropdown-menu {
         background: #888;
-        padding: 0; }
+        padding: 0;
+        font-size: 12px; }
         header nav .container .menu .dropdown-menu a.dropdown-item {
           margin-left: 0; }
 
-  ul.banner li.item {
-    height: 320px; }
-    ul.banner li.item img {
-      height: 100%;
-      width: auto; }
-    ul.banner li.item > div {
-      padding-top: 64px; }
-      ul.banner li.item > div h1 {
-        font-size: 32px;
-        margin-left: 16px;
-        margin-right: 16px; }
-      ul.banner li.item > div h2 {
-        font-size: 20px;
-        margin-bottom: 32px;
-        margin-left: 16px;
-        margin-right: 16px; }
+  ul.banner li.item a.button {
+    display: none; }
   ul.banner button.slick-arrow {
     display: none !important; }
   ul.banner ul.slick-dots {
     bottom: 16px; }
+    ul.banner ul.slick-dots button:before {
+      font-size: 8px; }
 
   main #product h2 {
     font-size: 24px; }
@@ -778,6 +777,20 @@ footer {
     height: 64px; }
   main #comment .name {
     width: 100%; }
+  main #list-logo .logo {
+    width: 80px; }
+
+  main#article {
+    padding: 8px 0; }
+    main#article h2 {
+      font-size: 20px; }
+    main#article .left .new-box {
+      display: block;
+      margin-bottom: 16px; }
+      main#article .left .new-box .combo-box {
+        margin-left: 0; }
+      main#article .left .new-box p.time {
+        margin-bottom: 0; }
 
   footer {
     text-align: center; }

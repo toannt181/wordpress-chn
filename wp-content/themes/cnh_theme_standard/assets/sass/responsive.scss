@@ -1,5 +1,7 @@
 @media screen and (min-width: 1900px) {
-
+  body {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -16,9 +18,10 @@
   }
 
   header {
+    font-size: 14px;
+
     nav {
       .container {
-        padding: 16px;
 
         .logo {
           flex-grow: 1;
@@ -33,7 +36,7 @@
         .menu {
           display: none;
           width: 100%;
-          margin-top: 16px;
+          margin-bottom: 16px;
           a, button {
             display: block;
             margin: 8px 16px;
@@ -42,6 +45,8 @@
           .dropdown-menu {
             background: $dark-grey;
             padding: 0;
+            font-size: 12px;
+
             a.dropdown-item {
               margin-left: 0;
             }
@@ -56,27 +61,8 @@
   ul.banner {
 
     li.item {
-      height: 320px;
-
-      img {
-        height: 100%;
-        width: auto;
-      }
-
-      > div {
-        padding-top: 64px;
-        h1 {
-          font-size: 32px;
-          margin-left: 16px;
-          margin-right: 16px;
-        }
-
-        h2 {
-          font-size: 20px;
-          margin-bottom: 32px;
-          margin-left: 16px;
-          margin-right: 16px;
-        }
+      a.button {
+        display: none;
       }
     }
 
@@ -86,6 +72,10 @@
 
     ul.slick-dots {
       bottom: 16px;
+
+      button:before {
+        font-size: 8px;
+      }
     }
 
   }
@@ -154,6 +144,38 @@
         width: 100%;
       }
     }
+
+    #list-logo {
+      .logo {
+        width: 80px;
+
+      }
+    }
+  }
+
+  main#article {
+    padding: 8px 0;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .left {
+      .new-box {
+        display: block;
+        margin-bottom: 16px;
+
+        .combo-box {
+          margin-left: 0;
+        }
+
+        p.time {
+          margin-bottom: 0;
+        }
+
+      }
+    }
+
   }
 
   footer {

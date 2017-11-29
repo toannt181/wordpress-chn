@@ -69,7 +69,6 @@ header {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      padding: 16px;
       .logo {
         flex-grow: 1;
         img {
@@ -87,6 +86,7 @@ header {
         display: flex;
         align-items: center;
         text-transform: uppercase;
+
         a, button {
           display: inline-block;
           color: #ddd;
@@ -117,48 +117,28 @@ header {
 ul.banner {
   margin: 0 !important;
   padding: 0;
-  h1, h2 {
-    text-align: center;
-  }
 
   li.item {
     position: relative;
-    height: 480px;
     text-align: center;
     color: white;
+
     img {
-      height: 100%;
       width: 100%;
       overflow: hidden;
     }
 
-    a {
+    a.button {
+      position: absolute;
+      left: 50%;
+      bottom: 80px;
+      transform: translateX(-50%);
+
       @include a-button(white, transparent);
       border: 3px solid white;
       text-transform: uppercase;
 
       @include button-effect-white(#333);
-    }
-
-    > div {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      padding-top: 128px;
-
-      h1 {
-        text-transform: uppercase;
-        font-size: 60px;
-        margin-bottom: 16px;
-      }
-
-      h2 {
-        text-transform: uppercase;
-        font-size: 32px;
-        margin-bottom: 64px;
-        font-weight: normal;
-      }
     }
   }
 
@@ -227,6 +207,7 @@ main {
           height: 256px;
           display: flex;
           align-items: center;
+          justify-content: center;
           overflow: hidden;
           img {
             width: 100%;
@@ -332,6 +313,7 @@ main {
           text-align: center;
           padding: 16px 0;
           border-bottom: 3px solid $dark-grey;
+          height: 70px;
         }
 
         p {
@@ -479,6 +461,22 @@ main {
     }
   }
 
+  #list-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+
+    .logo {
+      width: 150px;
+      margin: 0 16px;
+      img  {
+        width:100%;
+      }
+    }
+  }
+
   .agency {
     width: 100%;
 
@@ -509,7 +507,7 @@ main#article {
   padding: 32px 0;
 
   article {
-    margin-bottom: 80px;
+    margin-bottom: 16px;
 
     .img {
       margin-top: 16px;
@@ -540,6 +538,23 @@ main#article {
         width: 100%;
         height: auto;
         margin-bottom: 16px;
+      }
+    }
+
+    .new-box {
+      display: flex;
+      align-items: center;
+
+      .img {
+        flex: 0 0 250px;
+        margin-bottom: 0;
+        img {
+          width: 100%;
+        }
+      }
+
+      .combo-box {
+        margin-left: 16px;
       }
     }
 

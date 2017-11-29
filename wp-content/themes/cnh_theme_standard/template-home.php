@@ -17,12 +17,12 @@
 
             <li class="item">
 				<?php $image = get_sub_field( 'banner_image' ); ?>
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
-                <div>
-                    <h1><?php the_sub_field('big_title') ?></h1>
-                    <h2><?php the_sub_field('description') ?></h2>
-                    <a href="<?php the_sub_field('link') ?>">Xem thêm</a>
-                </div>
+                <a href="<?php the_sub_field( 'link' ) ?>">
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+                </a>
+				<?php if ( get_sub_field( 'is_have_button' ) ): ?>
+                    <a class="button" href="<?php the_sub_field( 'link' ) ?>">Xem thêm</a>
+				<?php endif; ?>
             </li>
 		<?php endwhile;
 
@@ -78,9 +78,9 @@
                         <div class="img">
 							<?php echo get_the_post_thumbnail( $p->ID, 'medium' ) ?>
                         </div>
-                        <h3><?php echo $p->post_title ?></h3>
+                        <h3><?php echo wp_trim_words( $p->post_title, 15 ) ?></h3>
                         <p class="content">
-							<?php echo wp_trim_words( $p->post_content, 15 ) ?>
+							<?php echo wp_trim_words( $p->post_content, 20 ) ?>
                         </p>
                         <a class="button" href="<?php echo get_the_permalink( $p->ID ) ?>">Chi tiết</a>
                     </div>
@@ -128,14 +128,25 @@
 
     <div class="bg-white">
         <div class="container ">
-            <img class="agency" src="<?php bloginfo( 'template_directory' ) ?>/assets/img/agency.png" alt="">
+            <div id="list-logo">
+				<?php
+				$images = get_field( 'logo_khach_hang' );
+
+				if ( $images ): ?>
+					<?php foreach ( $images as $image ): ?>
+                        <div class="logo"><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>"/></div>
+					<?php endforeach; ?>
+				<?php endif; ?>
+            </div>
         </div>
     </div>
 </main>
 <div id="map"></div>
 <script>
     function initMap() {
-        var uluru = {lat: <?php the_field( 'latitude', 'option' ); ?>, lng: <?php the_field( 'longitude', 'option' ); ?>};
+        var uluru = {
+            lat: <?php the_field( 'latitude', 'option' ); ?>,
+            lng: <?php the_field( 'longitude', 'option' ); ?>};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: <?php the_field( 'zoom', 'option' ); ?>,
             center: uluru

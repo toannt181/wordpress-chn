@@ -26,44 +26,46 @@ get_header();
 				endwhile; // End of the loop.
 				?>
 
-                <div class="news-related">
-                    <div class="header">
-                        <span>Tin tức liên quan</span>
-                    </div>
-                    <div class="group-news">
-                        <div class="row">
-							<?php
-							//Todo: for use in the loop, list 4 post titles related to first tag on current post
 
-							$tags = wp_get_post_tags( $post->ID );
+				<?php
+				//Todo: for use in the loop, list 4 post titles related to first tag on current post
 
-							if ( $tags ) {
+				$tags = wp_get_post_tags( $post->ID );
 
-								$first_tag = $tags[0]->term_id;
-								$args      = array(
-									'tag__in'          => array( $first_tag ),
-									'post__not_in'     => array( $post->ID ),
-									'posts_per_page'   => 6,
-									'caller_get_posts' => 1
-								);
-								$my_query  = new WP_Query( $args );
-								if ( $my_query->have_posts() ) {
-									while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-                                        <div class="col-md-4 item">
-                                            <h3><a href="?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-                                            <p class="date">Ngày đăng <?php the_date( 'd/m/Y' ) ?></p>
-                                            <p class="section">Trong <?php echo get_the_category()[0]->name ?></p>
-                                        </div>
+				if ( $tags ) {
 
-										<?php
-									endwhile;
-								}
-								wp_reset_query();
-							}
-							?>
+					$first_tag = $tags[0]->term_id;
+					$args      = array(
+						'tag__in'          => array( $first_tag ),
+						'post__not_in'     => array( $post->ID ),
+						'posts_per_page'   => 6,
+						'caller_get_posts' => 1
+					);
+				}
+
+				$my_query = new WP_Query( $args );
+
+				if ( $my_query->have_posts() ) : ?>
+                    <div class="news-related">
+                        <div class="header">
+                            <span>Tin tức liên quan</span>
+                        </div>
+                        <div class="group-news">
+                            <div class="row">
+								<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+                                    <div class="col-md-4 item">
+                                        <h3><a href="?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+                                        <p class="date">Ngày đăng <?php the_date( 'd/m/Y' ) ?></p>
+                                        <p class="section">Trong <?php echo get_the_category()[0]->name ?></p>
+                                    </div>
+
+								<?php endwhile; ?>
+                            </div>
                         </div>
                     </div>
-                </div>
+					<?php wp_reset_query();
+				endif; ?>
+
 
                 <div class="list-tag">
                     <span class="tag">TAGS</span>
